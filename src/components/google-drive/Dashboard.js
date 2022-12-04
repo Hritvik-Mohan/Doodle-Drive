@@ -4,14 +4,14 @@ import { useFolder } from '../../hooks/useFolder'
 import AddFolderButton from './AddFolderButton'
 import Navbar from './Navbar'
 import Folder from './Folder'
-import { useParams, useLocation } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import FolderBreadcrumbs from './FolderBreadcrumbs'
 import AddFileButton from './AddFileButton'
 import File from './File'
 
 export default function Dashboard() {
     const { folderId } = useParams()
-    const { state = {} } = useLocation()
+    // const { state = {} } = useLocation()
     const { folder, childFolders, childFiles } = useFolder(folderId)
     // console.log(childFolders)
 
