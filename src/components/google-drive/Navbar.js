@@ -6,7 +6,7 @@ export default function NavbarComponent() {
   return (
     <Navbar bg="light" expand="sm">
       <Navbar.Brand as={Link} to="/">
-        Noodle Drive
+        Doodle Drive
       </Navbar.Brand>
       <Nav>
         <Nav.Link as={Link} to="/user">
