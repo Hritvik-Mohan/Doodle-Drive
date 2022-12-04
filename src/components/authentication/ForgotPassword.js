@@ -3,6 +3,7 @@ import { Form, Button, Card, Alert } from 'react-bootstrap'
 import { useAuth } from '../../contexts/AuthContext'
 import { Link } from 'react-router-dom'
 import CenteredContainer from './CenteredContainer'
+import Brand from './Brand'
 
 export default function ForgotPassword() {
 
@@ -29,6 +30,7 @@ export default function ForgotPassword() {
 
     return (
         <CenteredContainer>
+            <Brand />
             <Card>
                 <Card.Body>
                     <h2 className='text-center mb-4'>

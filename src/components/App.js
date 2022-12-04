@@ -9,6 +9,7 @@ import ForgotPassword from "./authentication/ForgotPassword";
 import UpdateProfile from "./authentication/UpdateProfile"
 import Dashboard from "./google-drive/Dashboard";
 // import CenteredContainer from "./authentication/CenteredContainer";
+import './App.css'
 
 function App() {
   return (

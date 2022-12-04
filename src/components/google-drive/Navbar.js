@@ -5,7 +5,10 @@ import { Link } from 'react-router-dom'
 export default function NavbarComponent() {
   return (
     <Navbar bg="light" expand="sm">
-      <Navbar.Brand as={Link} to="/">
+      <Navbar.Brand as={Link} to="/" style={{
+                textAlign: "center",
+                fontFamily: "monospace"
+            }}>
         Doodle Drive
       </Navbar.Brand>
       <Nav>

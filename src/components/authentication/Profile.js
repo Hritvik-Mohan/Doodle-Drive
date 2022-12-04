@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Button, Card, Alert } from "react-bootstrap";
+import { Button, Card, Alert, Container } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { useAuth } from '../../contexts/AuthContext'
 import CenteredContainer from "./CenteredContainer";
+import Navbar from '../google-drive/Navbar'
 
 export default function Profile() {
   const [error, setError] = useState('')
@@ -21,6 +22,10 @@ export default function Profile() {
   }
 
   return (
+    <>
+    <Container fluid>
+            <Navbar />
+    </Container>
     <CenteredContainer>
       <Card>
         <Card.Body>
@@ -38,5 +43,6 @@ export default function Profile() {
         </Button>
       </div>
     </CenteredContainer>
+    </>
   );
 }
